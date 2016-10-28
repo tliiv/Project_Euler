@@ -6,6 +6,8 @@
 # However, for fun, we implement it generally, for an upper limit n and 
 # a list of factors instead of just 3 and 5.
 
+import time
+
 def multiple_sum(n, factors):
 	'''Computes the sum of all numbers below n which are divisible by
 	   at least one element in the list factors. 
@@ -32,6 +34,9 @@ def multiple_sum(n, factors):
 	return ans
 
 def main():
+	start = time.time()
 	print(multiple_sum(1000,[3, 5]))
+	end = time.time()
+	print(end-start)
 
 main()
