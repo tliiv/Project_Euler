@@ -7,6 +7,7 @@
 import time
 
 def factors(n):
+	'''Factors the number n and returns a sorted list of the factors'''
     factor = 2
     factors = []
     while factor * factor <= n:
